@@ -70,10 +70,10 @@ install_required_modules() {
 
 checkupdate
 install_required_modules
-if [ -f "/etc/motd" ]; then
-    echo 'Related repo https://github.com/spiritLHLS/lxd' >>/etc/motd
-    echo '--by https://t.me/spiritlhl' >>/etc/motd
-fi
+# if [ -f "/etc/motd" ]; then
+#     echo 'Related repo https://github.com/spiritLHLS/lxd' >>/etc/motd
+#     echo '--by https://t.me/spiritlhl' >>/etc/motd
+# fi
 sudo service iptables stop 2>/dev/null
 chkconfig iptables off 2>/dev/null
 if [ -f "/etc/sysconfig/selinux" ]; then
